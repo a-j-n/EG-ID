@@ -23,6 +23,23 @@ Laravel package discovery is enabled automatically.
 ## Laravel Setup
 
 For Laravel 10/11/12, no manual setup is needed after install.
+The package uses Laravel auto-discovery via `composer.json` (`extra.laravel.providers` and `extra.laravel.aliases`).
+
+To verify discovery in Laravel 12:
+
+```bash
+php artisan package:discover
+```
+
+Then test quickly in Tinker:
+
+```bash
+php artisan tinker
+```
+
+```php
+app(EgyptianNationalId\NationalIdService::class)->validate('30001010123456');
+```
 
 If you need manual registration, add:
 

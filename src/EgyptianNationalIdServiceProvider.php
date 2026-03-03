@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace EgyptianNationalId;
 
-use EgyptianNationalId\Rules\NationalIdRule;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 
