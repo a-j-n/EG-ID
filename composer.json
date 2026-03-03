@@ -1,5 +1,5 @@
 {
-    "name": "mahmoudebeid2/egyptian-national-id-laravel",
+    "name": "a-j-n/egyptian-national-id-laravel",
     "description": "Egyptian National ID validation, parsing, and generation package for PHP and Laravel.",
     "type": "library",
     "license": "MIT",
@@ -12,8 +12,7 @@
     ],
     "authors": [
         {
-            "name": "Mahmoud Ebeid",
-            "email": "mahmoudebeid2@gmail.com"
+            "name": "a-j-n"
         }
     ],
     "require": {

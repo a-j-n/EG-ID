@@ -15,10 +15,27 @@ https://github.com/mahmoudEbeid2/egyptian-national-id
 ## Installation
 
 ```bash
-composer require mahmoudebeid2/egyptian-national-id-laravel
+composer require a-j-n/egyptian-national-id-laravel
 ```
 
 Laravel package discovery is enabled automatically.
+
+## Laravel Setup
+
+For Laravel 10/11/12, no manual setup is needed after install.
+
+If you need manual registration, add:
+
+```php
+// config/app.php
+'providers' => [
+    EgyptianNationalId\EgyptianNationalIdServiceProvider::class,
+],
+
+'aliases' => [
+    'NationalId' => EgyptianNationalId\Facades\NationalId::class,
+],
+```
 
 ## Quick Usage
 
