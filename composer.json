@@ -1,0 +1,52 @@
+{
+    "name": "mahmoudebeid2/egyptian-national-id-laravel",
+    "description": "Egyptian National ID validation, parsing, and generation package for PHP and Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "egypt",
+        "national-id",
+        "validation",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Mahmoud Ebeid",
+            "email": "mahmoudebeid2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/validation": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EgyptianNationalId\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EgyptianNationalId\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EgyptianNationalId\\EgyptianNationalIdServiceProvider"
+            ],
+            "aliases": {
+                "NationalId": "EgyptianNationalId\\Facades\\NationalId"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
